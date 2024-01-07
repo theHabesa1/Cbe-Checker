@@ -1,4 +1,4 @@
-Certainly! Here's a basic template for a README file for your project. Make sure to replace placeholder information with the actual details related to your project:
+Hey Guys so this is my Solution to the fake transaction reciptes that are a problem in our country ETH . so i am here to solve it with this transaction checker please do contribute to it 
 
 ```markdown
 # Cbe Transaction Checker
