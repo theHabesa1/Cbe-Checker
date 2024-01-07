@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
 
+
+
 const TransactionForm = () => {
   
 
@@ -54,6 +56,25 @@ const TransactionForm = () => {
         {t('button')}
         </button>
       </form>
+
+      <footer className="mt-8 text-center text-gray-600">
+        <p>
+          {t('madeBy')} Yared{' '}
+          <span role="img" aria-label="heart emoji">
+            ❤️
+          </span>
+        </p>
+        <a
+          href="https://github.com/theHabesa1"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 hover:underline"
+        >
+     
+
+          GitHub
+        </a>
+      </footer>
     </div>
   );
 };
