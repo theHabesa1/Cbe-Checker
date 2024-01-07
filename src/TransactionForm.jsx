@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const TransactionForm = () => {
+  
+
+  const { t } = useTranslation();
   const [transactionId, setTransactionId] = useState('');
   const [accountNo, setAccountNo] = useState('');
 
@@ -15,10 +20,16 @@ const TransactionForm = () => {
   };
 
   return (
-    <div>
+    
+    <div className="flex flex-col items-center justify-center h-screen">
+      <LanguageSwitcher /> {/* Place the LanguageSwitcher component here */}
+
+<h1 className="text-3xl font-extrabold mb-4 text-center text-blue-600">
+  {t('header')}
+</h1>
       <form onSubmit={handleSubmit} className="max-w-md mx-auto mt-4 p-4 bg-gray-100 rounded-md">
         <label htmlFor="transactionId" className="block text-sm font-medium text-gray-600">
-          Transaction ID:
+          {t('label1')}
         </label>
         <input
           type="text"
@@ -29,7 +40,7 @@ const TransactionForm = () => {
         />
 
         <label htmlFor="accountNo" className="block mt-2 text-sm font-medium text-gray-600">
-         Recipient Account No :
+        {t('label2')}
         </label>
         <input
           type="text"
@@ -40,7 +51,7 @@ const TransactionForm = () => {
         />
 
         <button type="submit" className="mt-4 p-2 bg-blue-500 text-white rounded-md">
-          Check
+        {t('button')}
         </button>
       </form>
     </div>
