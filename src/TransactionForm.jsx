@@ -61,7 +61,7 @@ const TransactionForm = () => {
         <p>
           {t('madeBy')} Yared{' '}
           <span role="img" aria-label="heart emoji">
-            ❤️
+          ♞ 
           </span>
         </p>
         <a
