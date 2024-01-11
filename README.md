@@ -67,15 +67,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 [Yared](https://github.com/your-username)
 
-## Acknowledgments
 
-Special thanks to anyone who has contributed to this project.
-
-```
-
-Replace the following placeholders:
-
-- `your-username` with your GitHub username.
-- `your-repository` with your repository name.
-
-Feel free to add or modify sections based on the specific details and features of your project.
